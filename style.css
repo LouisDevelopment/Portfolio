@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    transition: 0.3s;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .slider {
+    margin:0;
+    display:flex;
+    flex-direction: column;
+  }
+
+  label {
+    width:100px;
+    height:30px;
+    left:5%;
+    top:3%;
+    position:absolute;
+    display:inline;
+    background-color: #555;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.1);
+    cursor:pointer;
+    transition:0.3s;
+  }
+
+  label:after {
+    content: "";
+    width: 40px;
+    height: 20px;
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    background:linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+  }
+
+label:active:after{
+  width:50px;
+}
+
+.dark{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+  .dark:checked + label { 
+    background:#343434;
+  }
+  .dark:checked + label:after{
+    left:95px;
+    transform: translateX(-100%);
+    background:linear-gradient(180deg, #777, #3a3a3a);
+  }
+  h1 {
+    display:inline;
+    font-size: 2rem;
+  }
+  h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    display:inline;
+  }
+  
+
+p a{
+  color: #666;
+}
+
+  h3 a{
+    color: #fff;
+    text-decoration: none;
+  }
+  h3 a:link{
+    text-decoration: none;
+    color: #fff;
+  }
+  h3 a:visited{
+    color: #fff;
+    text-decoration: none;
+  }
+  h3 a:hover {
+    color: #aaa;
+    text-decoration: none;
+  }
+  h3 a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #343434;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #343434;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .project {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    user-select: none;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides1 {
+    display: none;
+  }
+  .mySlides2 {
+    display: none;
+  }
+  
+  .mySlides3 {
+    display: none;
+  }
+  
+  .mySlides4 {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: #00000060;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 16px 16px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 16px 0 0 16px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.darkmode{
+  background-color:rgb(64,64,64);
+  transition: 0.3s;
+  color: white;
+}
+.project_darkmode{
+  
+  border: 1px solid #818181;
+  background-color:rgb(80, 80, 80);
+  transition: 0.3s;
+}
+
+.title {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.title:hover {
+  background-color: #555;
+}

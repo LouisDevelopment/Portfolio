@@ -1,50 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h3><a href="about.html">About Me</a></h3>
+    <h1>Projects</h1>
+    <h3><a href="contact.html">Contact</a></h3>
+    <section class="slider">
+      <input class="dark" type="checkbox" id="darkmode"/>
+      <label for="darkmode" onclick="toggleDark()"></label>
+    </section>
+  </header>
+  <main>
+    
+    <section class="project">
+      <h2><a href="https://louis-braidwood.itch.io/geometry-clicker" class="title">Geometry Clicker</a></h2>
+      
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
-	<head>
-		<title>Louis Braidwood</title>
-		<link rel = "stylesheet" href = "stylesheet.css">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides2 fade">
+            <img src="Screenshots/Geometry1.png" style="width:100%">
+          </div>
 
-	</head>
+          <div class="mySlides2 fade">
+            <img src="Screenshots/Geometry2.png" style="width:100%">
+          </div>
 
-	<body>
-		
-		<header class="banner">
-			<nav>
-				<ul>
-					<li><a href = "#top">Home</a></li>
-					<li><a href = "#about">About Me</a></li>
-					<li><a href = "projects.html">Projects</a></li>
-					<li><a href = "#footer">Contact</a></li>
-				</ul>
-			</nav>
+          <div class="mySlides2 fade">
+            <img src="Screenshots/Geometry3.png" style="width:100%">
+          </div>
 
-			<h1>Louis Braidwood</h1>
-			<h2>Game Developer / Programmer</h2>
-			<a href = "projects.html" class = "button">View Projects</a>
-		</header>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <br>
+        <p>This game was made in a 12 hour game jam. Its a simple clicker 
+          game but is really fun and honestly quite addictive. Its great for
+           passing the time. It can be downloaded at 
+           <a href="https://louis-braidwood.itch.io/geometry-clicker" class="title">itch.io</a>.
+        </p>
+    </section>
+    <section class="project">
+      <h2><a class="title">Survival Game</a></h2>
+      
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
-		<section id = "about">
-			
-			<h2>About Me</h2>
-			<p>I'm Louis, a passionate programmer from Scotland. I've been 
-				developing games and software for several years in my spare time, mostly for 
-				personal use but I've also released a procedural noise generator, a game called Geometry Clicker and 
-				a game called Freerunner.
-				<br> <br>
-				I'm currently in my fourth year studying Computer Science at Heriot-Watt University, Edinburgh 
-				which has so far been a great experience both academically and socially.
-				<br> <br>
-				I'm an extremely passionate programmer. I can currently write in C++, Java, Javascript
-				, C#, HTML, CSS and a couple more. I'm always open to learning a new language, 
-				whether it be for a job, university or out of personal interest.
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides3 fade">
+            <img src="Screenshots/SurvivalGame1.png" style="width:100%">
+          </div>
 
-			</p>
-		</section>
-		
-		<div class="divider"></div>
+          <div class="mySlides3 fade">
+            <img src="Screenshots/SurvivalGame2.png" style="width:100%">
+          </div>
 
-		<footer id="footer">Contact: louisbraidwood@gmail.com • <a href="https://louis-braidwood.itch.io/">itch.io</a> • © Louis Braidwood</footer>
-	</body>
+          <div class="mySlides3 fade">
+            <img src="Screenshots/SurvivalGame3.png" style="width:100%">
+          </div>
 
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        <br>
+        <p>A survival game built within Java using the LWJGL and JOML libraries. 
+          This game includes crafting, building, mining,  procedurally generated 2D landscapes and caves 
+          using Simplex Noise and unique biomes including plains, forests and deserts.
+          This was my first attempt at a "complete" project when I was 16 but it eventually
+          became too big of a project for me to handle at that time. I'd love to go back to it
+          one day, every time I go back and run the game I see all the potential it has.
+        </p>
+    </section>
+    <section class="project">
+      <h2><a href="https://louis-braidwood.itch.io/simplex-noise" class="title">Procedural Generator</a></h2>
+      
+        <!-- Slideshow container -->
+        <div>
+
+          <!-- Full-width images with number and caption text -->
+          <div class="fade">
+            <img src="Screenshots/ProceduralGenerator.png" style="width:100%">
+          </div>
+        </div>
+        <br>
+        <p>This project was created initially as my Advanced-Higher Computer Science Project and then 
+          reworked at several points over the next year or two. It uses the same algorithm found in the 
+          survival game for terrain generation. There are several things the user can adjust to get the exact generation you want.
+          The project can be downloaded from 
+
+            <a href="https://louis-braidwood.itch.io/simplex-noise" class="title">itch.io</a>.
+        </p>
+    </section>
+    
+    <section class="project">
+      <h2><a href="https://louis-braidwood.itch.io/squishy" class="title">Squishy</a></h2>
+      
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides1 fade">
+            <img src="Screenshots/squishy1.png" style="width:100%">
+          </div>
+          <div class="mySlides1 fade">
+            <img src="Screenshots/squishy2.png" style="width:100%">
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <br>
+        <p>A physics tech demo made in C++, inspired by my partner's squishmallow aptly named "Squishy". In the tech demo you can throw Squishy around and he'll
+          satisfyingly bounce around the room and chase balls around the room that you can also throw/ When I have more time I hope to return
+          to this project and make it into the full experience I describe on the <a href="https://louis-braidwood.itch.io/squishy" class="title">itch.io</a> page.
+        </p>
+
+    </section>
+    
+  <script src="darkmode.js"></script>
+    <script src="arrows.js"></script>
+  </main>
+</body>
 </html>
