@@ -160,10 +160,20 @@ input[type=submit]:hover {
     margin-bottom: 1rem;
   }
 
+  .img-container{
+    display: table-cell;  
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  }
+
   /* Slideshow container */
   .slideshow-container {
     user-select: none;
     max-width: 1000px;
+    min-height:450px;
     position: relative;
     margin: auto;
   }
