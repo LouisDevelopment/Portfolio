@@ -304,6 +304,12 @@ input[type=submit]:hover {
 
   label {
     top:93%;
+    position:fixed;
+    z-index: 3;
+  }
+
+  p {
+    font-size:14px;
   }
 
 }
