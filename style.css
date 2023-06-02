@@ -5,7 +5,8 @@
     padding: 0;
   }
   
-  body {
+  body { 
+    margin-top:100px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -14,24 +15,40 @@
   }
   
   header {
+    margin-top:-100px;
     background-color: #333;
     color: #fff;
+    position:fixed;
+    width:100%;
     align-items: center;
+    z-index: 3;
     text-align: center;
     padding: 1rem;
   }
+
+  .splash-page {
+    display:auto;
+    min-width:100%;
+    padding-top: 30vh;
+    height:92vh;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   
   .slider {
-    margin:0;
+    left:5%;
+    top:30%;
     display:flex;
+    position:absolute;
     flex-direction: column;
   }
 
   label {
     width:100px;
     height:30px;
-    left:5%;
-    top:3%;
     position:absolute;
     display:inline;
     background-color: #555;
@@ -156,6 +173,31 @@ input[type=submit]:hover {
     transition: 0.3s;
   }
   
+  .double-project {
+    display:flex;
+  }
+  .double-project-panel-right {
+    margin-left:4%;
+    width: 350px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+  }
+  .double-project-panel-left {
+    margin-right:4%;
+    width: 350px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+  }
+  
+
   h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
