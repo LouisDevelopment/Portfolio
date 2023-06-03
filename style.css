@@ -43,8 +43,8 @@
     text-align:center;
     border: 10px solid #fff;
     position:absolute;
-    width:13%;
-    height:26vh;
+    width:14vw;
+    height:14vw;
     border-radius: 50%;
     transition:0.3s;
   }
@@ -59,7 +59,7 @@
   }
   .top-middle{
     top:15vh;
-    left:44%;
+    left:43%;
   }
   
   .top-right{
@@ -73,7 +73,7 @@
   }
   .bottom-middle{
     top:66vh;
-    left:44%;
+    left:43%;
   }
   .bottom-right{
     top:60vh;
