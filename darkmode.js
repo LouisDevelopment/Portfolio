@@ -9,9 +9,16 @@ function toggleDark() {
     
     for(let i = 0; i < projects.length; i++){
         projects[i].classList.toggle("project_darkmode");
+    }
+    
+    for(let i = 0; i < left_projects.length; i++){
         left_projects[i].classList.toggle("project_darkmode");
+    }
+    
+    for(let i = 0; i < right_projects.length; i++){
         right_projects[i].classList.toggle("project_darkmode");
     }
+    
     if(body.classList.contains("darkmode")){
         localStorage.setItem('darkMode', 'enabled');
     } else {
@@ -30,7 +37,13 @@ function onStart(){
     checkbox.checked = true;
     for(let i = 0; i < projects.length; i++){
         projects[i].classList.toggle("project_darkmode");
+    }
+    
+    for(let i = 0; i < left_projects.length; i++){
         left_projects[i].classList.toggle("project_darkmode");
+    }
+    
+    for(let i = 0; i < right_projects.length; i++){
         right_projects[i].classList.toggle("project_darkmode");
     }
   }

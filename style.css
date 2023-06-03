@@ -235,6 +235,14 @@ input[type=submit]:hover {
     transition: 0.3s;
   }
   
+  .project_darkmode{
+
+  border: 1px solid #818181;
+  background-color:rgb(80, 80, 80);
+  transition: 0.3s;
+  }
+
+
   .double-project {
     display:flex;
   }
@@ -369,12 +377,6 @@ input[type=submit]:hover {
   background-color:rgb(64,64,64);
   transition: 0.3s;
   color: white;
-}
-.project_darkmode{
-  
-  border: 1px solid #818181;
-  background-color:rgb(80, 80, 80);
-  transition: 0.3s;
 }
 
 .title {
