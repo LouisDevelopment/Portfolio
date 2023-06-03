@@ -376,6 +376,10 @@ input[type=submit]:hover {
   background-color: #555;
 }
 
+.divider{
+  height: 31.4vh;
+}
+
 .footer{
   left: 0px;
   bottom: 0px;
