@@ -427,6 +427,44 @@ input[type=submit]:hover {
     z-index: 3;
   }
 
+  .splash-page img{
+    text-align:center;
+    border: 5px solid #fff;
+    position:absolute;
+    
+    width:30vw;
+    height:30vw;
+    border-radius: 50%;
+    transition:0.3s;
+  }
+
+  .top-left{
+    top:25vh;
+    left:2%;
+  }
+  .top-middle{
+    top:15vh;
+    left:35%;
+  }
+  
+  .top-right{
+    top:25vh;
+    left:68%;
+  }
+  
+  .bottom-left{
+    top:70vh;
+    left:2%;
+  }
+  .bottom-middle{
+    top:80vh;
+    left:35%;
+  }
+  .bottom-right{
+    top:70vh;
+    left:68%;
+  }
+
   p {
     font-size:12px;
   }
